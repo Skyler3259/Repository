@@ -1,7 +1,13 @@
 body {
-    background-color: Lightgreen;
+    background-color: lightskyblue;
 }
 h1 {
     color: white;
     margin: auto;
+}
+para {
+    background-color: lightgreen;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
 }
