@@ -11,21 +11,24 @@ def add(num_1, num_2):
 Define a function 'subtract' that accepts two numbers as arguments.
 Return the subtraction of the two numbers
 """
-
+def subtract(num_1, num_2):
+    return num_1 - num_2
 
 """
 Define a function 'integer_divide' that accepts two numbers as arguments.
 Return the Integer Division of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def integer_divide(num_1, num_2):
+    return int(num_1 / num_2)
 
 """
 Define a function 'float_divide' that accepts two numbers as arguments.
 Return the Float Division of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def float_divide(num_1, num_2):
+    return num_1 / num_2
 
 """
 Define a function 'remainder_divide' that accepts two numbers as arguments.
@@ -39,21 +42,25 @@ Define a function 'multiplication' that accepts two numbers as arguments.
 Return the multiplication of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def multiplication(num_1, num_2):
+    return num_1 * num_2
 
 """
 Define a function 'power' that accepts two numbers as arguments.
 Return the power of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def power(num_1, num_2):
+    return num_1 ** num_2
 
 """
 Define a function 'convert_celsius_to_fahrenheit' that takes one argument, celsius.
 Using your defined arithmetic functions above, calculate the conversion.
 The formula is F = C * 1.8 + 32
 """
-
+def convert_celsius_to_fahrenheit(cel):
+    result = multiplication(cel, 1.8)
+    return add(result, 32)
 
 """
 Define a function 'convert_kilometers_to_miles' that takes one argument, kilometers.
