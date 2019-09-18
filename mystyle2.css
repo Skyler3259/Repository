@@ -1,6 +1,10 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
+    background-color: rgb(20, 212, 36);
     padding: 10px;
-}
+    }
+    .item1 {
+      grid-column: 1 / span 3;
+      grid-row: 1;
+      }
