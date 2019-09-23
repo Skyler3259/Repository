@@ -3,8 +3,12 @@
     grid-template-columns: auto auto auto;
     background-color: rgb(20, 212, 36);
     padding: 10px;
+    justify-content: space-evenly;
     }
+    
+
     .item1 {
       grid-column: 1 / span 3;
       grid-row: 1;
+      font-size: 50px;
       }
