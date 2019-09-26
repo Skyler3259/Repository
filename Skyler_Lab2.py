@@ -16,8 +16,11 @@ Each "cell" should have a default value of an underscore, '_'.
 If you need help consult the notes from Week4.py.
 """
 def make_board(): 
-    a = ['_','_','_'], ['_','_','_'], ['_','_','_']
-    return [ a ]
+    x = ['_','_','_'] 
+    y = ['_','_','_'] 
+    z = ['_','_','_'] 
+    board = [x,y,z]
+    return board
 
 """
 Part 2: Printing the Game Board
@@ -30,15 +33,11 @@ Bonus EC: Figure out how to clear the playing field before the board is printed.
 Hint, it may be wise to 'import sys', but what from sys can we use???
 """
 def print_board(board):
-    print(
-        f"""
-        | {board[0][0]} | {board[1][0]} | {board[2][0]}
-        ---------
-        | {board[0][1]} | {board[1][1]} | {board[2][1]}
-        ---------
-        | {board[0][2]} | {board[1][2]} | {board[2][2]}
-        """
-        )
+    print(f'{board[0][0]} | {board[1][0]} | {board[2][0]}')
+    print('-----------')
+    print(f'{board[0][1]} | {board[1][1]} | {board[2][1]}')
+    print('-----------')
+    print(f'{board[0][2]} | {board[1][2]} | {board[2][2]}')  
     
 """
 Part 3: Making the move for the player
@@ -52,8 +51,11 @@ on the board. Just set it to the value PLAYER, which is 'X'.
 Bonus EC: Figure out a way checking whether or not the user made a valid choice.
 """
 def make_move(board):
-  x,y = input(f'enter the x,y pair for an available position: ').split(',')
-    
+
+    x, y = input(f'enter the x, y pair for an available position: ').split(',')
+    #x = int(input('Enter Col'))
+    #y = int(input('Enter Row'))
+    #board[Col][Row] = PLAYER
     board[int(x)][int(y)] = PLAYER
 
 """
@@ -65,8 +67,17 @@ Using if/elif/else statments check whether or not that player has won the game a
 Note that there are a total of 8 potential ways of winning the game of Tic-Tac-Toe.
 """
 def winning(current_player, board):
-    if (board[0][0] == current_player and board[1][0] == current_player and)
-
+    if  (board[0][0] == board[1][0] and board[1][0] == board[2][0] and board[0][0] == current_player) or \
+        (board[0][1] == board[1][1] and board[1][1] == board[2][1] and board[0][1] == current_player) or \
+        (board[0][2] == board[1][2] and board[1][2] == board[2][2] and board[0][2] == current_player) or \
+        (board[0][0] == board[0][1] and board[0][1] == board[0][2] and board[0][0] == current_player) or \
+        (board[1][0] == board[1][1] and board[1][1] == board[1][2] and board[1][0] == current_player) or \
+        (board[2][0] == board[2][1] and board[2][1] == board[2][2] and board[2][0] == current_player) or \
+        (board[0][0] == board[1][1] and board[1][1] == board[2][2] and board[0][0] == current_player) or \
+        (board[0][2] == board[1][1] and board[1][1] == board[2][0] and board[0][0] == current_player):
+        return True
+    else:
+        return False
 
 ##############################################################
 # Test Code
