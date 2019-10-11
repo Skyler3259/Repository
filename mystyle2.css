@@ -1,12 +1,15 @@
 
+h1.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px), (max-resolution: 399dpi) {
   div.grid-item {
     font-size: 40px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), (min-resolution: 400dpi) {
   div.grid-item {
     font-size: 20px;
   }
