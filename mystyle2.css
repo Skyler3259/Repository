@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One|PT+Sans|Pacifico|PT+Serif|Molle:400i|BioRhyme&display=swap');
+
+/* @import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/BurgerSqueeze/styles.scss');
+@import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/Burger/styles.scss'); */
+
+@import url('burger-styles.css');
+:root {
+    --pink1: #ff55eebf;
+    --pink2: #ff00ba;
+    --pink3: #ffcce8;
+    --purple1: #9800ff;
+    --purple2: #6600aa;
+    --purple3: #ddaaff;
+    --blue1: #55eeffb3;
+    --blue2: #666ccc;
+    --blue3: #0027ff;
+    --mint1: #aaffdd;
+    --mint2: #55ffbb;
+    --lime1: #99ff55;
+    --lime2: #12ff00;
+    --sage1: #44aa00;
+    --hunter1: #005533;
+    --gold1: #ffd800;
+    --yellow1: #fff433;
+    --yellow2: #fff999;
+    --orange1: #ff8f33;
+}
 
 h1.sansserif {
   font-family: Arial, Helvetica, sans-serif;
