@@ -1,0 +1,59 @@
+{
+    "menu": [{
+            "name": "Soups & Salads",
+            "items": [{
+                "name": "Watermelon Gazpacho",
+                "description": "Served cold with cucumber and dill creme fraiche",
+                "image": "/images/watermelon-gazpacho.jpg",
+                "price": 3
+            }, {
+                "name": "Grilled Peach & Smoked Salmon Salad",
+                "description": "Arugula, candied sliced almonds, radicchio",
+                "image": "https://cdn1.woolworths.media/content/recipes/1712-chargrilled-peach-and-salmon-salad.jpg",
+                "price": 4
+            }]
+        },
+        {
+            "name": "Appetizers",
+            "items": [{
+                "name": "Bacon-Wrapped Figs",
+                "description": "Hot grilled with maple-chipotle dipping sauce and stuffed with goat cheese",
+                "image": "https://www.thehungryhutch.com/wp-content/uploads/2012/08/Bacon-Wrapped-Figs-w-Goat-Cheese-Feature.jpg",
+                "price": 6
+            }]
+        },
+        {
+            "name": "Pastas",
+            "items": [{
+                "name": "Pumpkin Mascarpone Ravioli",
+                "description": "Served with a sage brown butter sauce and toasted pumpkin seeds",
+                "price": 11
+            }]
+        },
+        {
+            "name": "Entrees",
+            "items": [{
+                "name": "Smoked Pork Ribs with Blueberry BBQ Sauce",
+                "description": "Side of beer-battered rosemary sweet potato wedges",
+                "price": 16
+            }, {
+                "name": "Pomegranate Lamb Chops",
+                "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
+                "price": 20
+            }]
+        },
+        {
+            "name": "Beverages",
+            "items": [{
+                "name": "Coke Products",
+                "description": "Coke, Diet Coke, Cherry Coke, Sprite",
+                "price": 2
+            }, {
+                "name": "Specialty Sodas",
+                "description": "Jones, Saranac, Millstream",
+                "price": 3,
+                "image": "https://insiderfinancial.com/wp-content/uploads/2019/03/Jones-Soda.jpg"
+            }]
+        }
+    ]
+}
