@@ -20,7 +20,9 @@ const populateFood = async function() {
             categorySection.appendChild(categoryHeading); // step 4: append child
             foodMenuElement.appendChild(categorySection); // step 4: append child 
             let categorySize = 0;
+            let categorynumber = 0;
             category.items.forEach(item => {
+                categorynumber++;
                 // items
                 itemName = document.createElement("h4"); // step 2: create element
                 itemName.innerText = item.name; // step 3: create content
@@ -31,6 +33,7 @@ const populateFood = async function() {
                 itemPrice = document.createElement("b");
                 itemPrice.innerText = '$' + item.price;
                 categorySection.appendChild(itemPrice);
+                categorySection.setAttribute("class","grid-item item" + categorynumber);
                 if (item.image) {
                     itemImage = document.createElement("img");
                     itemImage.setAttribute("src", item.image); //setAttribute
