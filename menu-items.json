@@ -1,45 +1,58 @@
 {
     "menu": [{
-            "name": "Soups & Salads",
+            "name": "Pizza",
             "items": [{
-                "name": "Watermelon Gazpacho",
+                "name": "Cheese",
                 "description": "Served cold with cucumber and dill creme fraiche",
-                "image": "/images/watermelon-gazpacho.jpg",
-                "price": 3
-            }, {
-                "name": "Grilled Peach & Smoked Salmon Salad",
+                "image": "",
+                "price": 8
+            },
+            {
+                "name": "Pepperoni",
                 "description": "Arugula, candied sliced almonds, radicchio",
-                "image": "https://cdn1.woolworths.media/content/recipes/1712-chargrilled-peach-and-salmon-salad.jpg",
-                "price": 4
+                "image": "",
+                "price": 10
+            },
+            {
+                "name": "Sausage",
+                "description": "Arugula, candied sliced almonds, radicchio",
+                "image": "",
+                "price": 10
+            },
+            {
+                "name": "Flatbread",
+                "description": "Arugula, candied sliced almonds, radicchio",
+                "image": "",
+                "price": 10
+            }, 
+            {
+                "name": "Vegetarian",
+                "description": "Arugula, candied sliced almonds, radicchio",
+                "image": "",
+                "price": 10
             }]
         },
         {
-            "name": "Appetizers",
+            "name": "Sides",
             "items": [{
-                "name": "Bacon-Wrapped Figs",
-                "description": "Hot grilled with maple-chipotle dipping sauce and stuffed with goat cheese",
-                "image": "https://www.thehungryhutch.com/wp-content/uploads/2012/08/Bacon-Wrapped-Figs-w-Goat-Cheese-Feature.jpg",
-                "price": 6
-            }]
-        },
-        {
-            "name": "Pastas",
-            "items": [{
-                "name": "Pumpkin Mascarpone Ravioli",
-                "description": "Served with a sage brown butter sauce and toasted pumpkin seeds",
-                "price": 11
-            }]
-        },
-        {
-            "name": "Entrees",
-            "items": [{
-                "name": "Smoked Pork Ribs with Blueberry BBQ Sauce",
+                "name": "Salads",
                 "description": "Side of beer-battered rosemary sweet potato wedges",
-                "price": 16
-            }, {
-                "name": "Pomegranate Lamb Chops",
+                "price": 4
+            },
+            {
+                "name": "Fried chicken",
                 "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
-                "price": 20
+                "price": 5
+            },
+            {
+                "name": "Fries",
+                "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
+                "price": 3
+            },
+            {
+                "name": "Mashed poatatoes",
+                "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
+                "price": 3
             }]
         },
         {
@@ -48,7 +61,13 @@
                 "name": "Coke Products",
                 "description": "Coke, Diet Coke, Cherry Coke, Sprite",
                 "price": 2
-            }, {
+            }, 
+            {
+                "name": "Lemonades",
+                "description": "Lemon, Strawberry",
+                "price": 2
+            },
+            {
                 "name": "Specialty Sodas",
                 "description": "Jones, Saranac, Millstream",
                 "price": 3,
