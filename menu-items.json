@@ -3,31 +3,31 @@
             "name": "Pizza",
             "items": [{
                 "name": "Cheese",
-                "description": "Served cold with cucumber and dill creme fraiche",
+                "description": "",
                 "image": "",
                 "price": 8
             },
             {
                 "name": "Pepperoni",
-                "description": "Arugula, candied sliced almonds, radicchio",
+                "description": "",
                 "image": "",
                 "price": 10
             },
             {
                 "name": "Sausage",
-                "description": "Arugula, candied sliced almonds, radicchio",
+                "description": "",
                 "image": "",
                 "price": 10
             },
             {
                 "name": "Flatbread",
-                "description": "Arugula, candied sliced almonds, radicchio",
+                "description": "",
                 "image": "",
                 "price": 10
             }, 
             {
                 "name": "Vegetarian",
-                "description": "Arugula, candied sliced almonds, radicchio",
+                "description": "",
                 "image": "",
                 "price": 10
             }]
@@ -36,22 +36,22 @@
             "name": "Sides",
             "items": [{
                 "name": "Salads",
-                "description": "Side of beer-battered rosemary sweet potato wedges",
+                "description": "",
                 "price": 4
             },
             {
                 "name": "Fried chicken",
-                "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
+                "description": "",
                 "price": 5
             },
             {
                 "name": "Fries",
-                "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
+                "description": "",
                 "price": 3
             },
             {
                 "name": "Mashed poatatoes",
-                "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
+                "description": "",
                 "price": 3
             }]
         },
