@@ -87,6 +87,18 @@ class Deck:
         contain, 2-10, J, Q, K, A.
         """
         ###################################################################
+        deck = []
+        for i in SUITS:
+            A_Card = AceCard(i)
+            deck.append(A_card)
+            for f in FACE_CARDS:
+                F_Card = FaceCard(f, i)
+                deck.append(F_Card)
+            for n in NUMBERS:
+                N_Card = Card(n, i)
+                deck.append(N_Card)
+            self.__shuffle(deck)
+            return deck
         
 
 
@@ -101,7 +113,7 @@ class Deck:
         """
         ###################################################################
 
-
+        
 
         ###################################################################
 
