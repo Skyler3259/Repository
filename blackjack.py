@@ -178,8 +178,11 @@ class Hand:
         Loops over the Cards in the Hand and returns the soft score
         """
         ###################################################################
+        total = 0
+        for i in range(len(self.__cards)):
+            total += int(self.__cards[i].soft_value())
 
-        self.__player.get_soft_score()
+        #self.__player.get_soft_score()
 
         ###################################################################
 
@@ -283,12 +286,32 @@ class Game(object):
         """
         ###################################################################
 
-        if self.__player.get_hard_score > 21
-        print ("player busts")
-        elif self.__dealer.get_hard_score > 21
-        print ("player wins")
-        elif 
-       
+        if self.__player.get_hard_score() > 21:
+            print ("player busts")
+        elif self.__dealer.get_hard_score() > 21:
+            print ("player wins")
+        elif self.__player.get_hard_score() == 21:
+            print ("player wins")
+        elif self.__dealer.get_hard_score() == 21:
+            print ("player loses")
+        elif self.__player.get_hard_score() == self.__dealer.get_hard_score():
+            print ("player wins") 
+        elif self.__player.get_hard_score() > self.__dealer.get_hard_score():
+            print ("player wins")
+        elif self.__player.get_hard_score() < self.__dealer.get_hard_score():
+            print ("player loses")
+        elif self.__player.get_soft_score() == self.__dealer.get_soft_score():
+            print ("player wins")
+        elif self.__player.get_soft_score() > self.__dealer.get_soft_score():
+            print ("player wins")
+        elif self.__player.get_soft_score() < self.__dealer.get_soft_score():
+            print ("player loses")
+        elif self.__player.get_soft_score() == 21:
+            print ("player wins")
+        elif self.__dealer.get_soft_score() == 21:
+            print ("player loses")
+        else:
+            print ("Error")
 
         ###################################################################
 
