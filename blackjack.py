@@ -10,7 +10,8 @@ import random
 # Potentially Helpful Constants
 SUITS = [u'\u2663', u'\u2666', u'\u2665', u'\u2660']
 FACE_CARDS = ['J', 'Q', 'K']
-
+NUMBERS = ['2','3','4','5','6','7','8','9','10']
+#playerHitScore = 15
 class Card(object):
     """
     Represents a standard numerical playing card.
@@ -90,7 +91,7 @@ class Deck:
         deck = []
         for i in SUITS:
             A_Card = AceCard(i)
-            deck.append(A_card)
+            deck.append(A_Card)
             for f in FACE_CARDS:
                 F_Card = FaceCard(f, i)
                 deck.append(F_Card)
@@ -100,9 +101,6 @@ class Deck:
             self.__shuffle(deck)
             return deck
         
-
-
-
         ###################################################################
 
     def deal_card(self):
@@ -114,7 +112,7 @@ class Deck:
         ###################################################################
 
         DealCard = self.__cards.pop()
-        return DealtCard
+        return DealCard
         ###################################################################
 
 class Hand:
@@ -191,8 +189,11 @@ class Hand:
         Loops over the Cards in the Hand and returns the hard score
         """
         ###################################################################
+        total = 0
+        for i in range(len(self.__cards)):
+            total += int(self.__cards[i].hard_value())
 
-        self.__player.get_hard_score()
+        #self.__player.get_hard_score()
 
         ###################################################################
 
@@ -259,8 +260,10 @@ class Game(object):
         returns False.
         """
         ###################################################################
-
-        return self.__player.get_hard_score() > 21:
+        if self.__player.get_hard_score() > 21 :
+            return True
+        else :
+            return False
 
         ###################################################################
 
