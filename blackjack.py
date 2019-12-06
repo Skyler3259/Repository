@@ -11,7 +11,7 @@ import random
 SUITS = [u'\u2663', u'\u2666', u'\u2665', u'\u2660']
 FACE_CARDS = ['J', 'Q', 'K']
 NUMBERS = ['2','3','4','5','6','7','8','9','10']
-#playerHitScore = 15
+playerHitScore = 15
 class Card(object):
     """
     Represents a standard numerical playing card.
