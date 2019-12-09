@@ -12,7 +12,10 @@ function makeCartRow(item, price) {
     row.appendChild(priceData);
     return row;
 }
-
+function deleteRow(btn) {
+    var row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+  }
 let exampleArray = [{ item: "soup", price: 3 },
     { item: "salad", price: 3 },
     { item: "sandwich", price: 5 }
