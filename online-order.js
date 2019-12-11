@@ -37,9 +37,11 @@ const updateCart = async function(array) {
     const headerRow = document.createElement("tr"); // step 2: create new element to be child
     const itemHeader = document.createElement("th"); // also step 2 at the next level down
     const amountHeader = document.createElement("th");
+    //const deletebutton = <td> <input type="button" value="Delete Row" onclick="DeleteRow(this);"> </td>
     itemHeader.innerText = "Item"; // step 3: create content for new element
     amountHeader.innerText = "Amount";
     headerRow.appendChild(itemHeader); // step 4: append child (lower level)
+    //headerRow.appendChild(deletebutton);
     headerRow.appendChild(amountHeader);
     cartTable.appendChild(headerRow); // also step 4 (higher level)
     // add the example items
